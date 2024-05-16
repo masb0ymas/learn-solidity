@@ -23,6 +23,4 @@ const input = {
 
 const solCompile = JSON.parse(solc.compile(JSON.stringify(input)));
 
-console.log(inboxPath, source, input, solCompile)
-
 module.exports = solCompile.contracts["lottery.sol"].Lottery;
