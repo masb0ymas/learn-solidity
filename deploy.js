@@ -26,6 +26,8 @@ const deploy = async () => {
     console.log(error);
   }
 
+  console.log(JSON.stringify(abi));
+
   provider.engine.stop();
 };
 
